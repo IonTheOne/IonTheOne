@@ -18,7 +18,7 @@
 <h2 align="center">My skills</h2>
 <h2 align="left">Backend:</h2>
 
-[![My Skills](https://skillicons.dev/icons?i=go,docker,kubernetes,mongodb,postgresql,clickhouse,istio,aws,gcp,azure,redis,bash,kafka,prometheus,grafana,humio,nginx,linux)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=go,docker,kubernetes,mongodb,postgresql,aws,gcp,azure,redis,bash,kafka,prometheus,grafana,nginx,linux)](https://skillicons.dev)
 
 <h2 align="left">Frontend:</h2>
 
@@ -26,4 +26,4 @@
 
 <h3 align="left">Development Tools: </h3>
 
-[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,bash,postman,jenkins,githubactions)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,bash,postman,jenkins,githubactions,azuredevops)](https://skillicons.dev)
