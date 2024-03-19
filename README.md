@@ -22,7 +22,7 @@
 
 <h2 align="left">Frontend:</h2>
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,sass)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=htmx,html,css,js,ts,react,sass)](https://skillicons.dev)
 
 <h3 align="left">Development Tools: </h3>
 
