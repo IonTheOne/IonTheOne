@@ -15,7 +15,7 @@ jobs:
       - name: Make daily contribution
         run: |
           echo "Making daily contribution"
-          echo "$(date)" >> README.md
+          echo "$(date)" >> daily.txt
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
@@ -25,7 +25,7 @@ jobs:
           # Set the files to commit - replace this with your own file paths
           add: "daily.txt"
       - name: Push changes
-        uses: MlsterMass/github-push-action@master
+        uses: ad-m/github-push-action@master
         with:
           branch: daily-contribution
           # Set the Git credentials - replace this with your own secrets
