@@ -24,6 +24,10 @@ jobs:
           message: "Daily contribution"
           # Set the files to commit - replace this with your own file paths
           add: "daily.txt"
+      - name: Pull latest changes
+        run: |
+          git checkout daily-contribution
+          git pull origin daily-contribution
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
