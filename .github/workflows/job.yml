@@ -25,23 +25,15 @@ jobs:
           # Set the files to commit - replace this with your own file paths
           add: "daily.txt"
       - name: Stash changes
-        run: git stash
+        run: |
+          git diff-index --quiet HEAD || git stash
       - name: Pull latest changes
         run: |
           git checkout daily-contribution
           git pull origin daily-contribution
       - name: Apply stashed changes
-        run: git stash pop
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: daily-contribution
-          # Set the Git credentials - replace this with your own secrets
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Pull latest changes
         run: |
-          git checkout daily-contribution
-          git pull origin daily-contribution
+          git stash list | grep stash@{0} && git stash pop || echo "No stash to apply"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
